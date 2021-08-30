@@ -18,7 +18,7 @@ jobs:
       - name: Login to Docker Hub
         run: echo "${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
       - name: Build the Image
-      run: |
-        docker buildx build \
-          --tag "${{ secrets.DOCKER_HUB_USERNAME }}"/flask-example:latest \
-          --platform linux/amd64,linux/amd64,linux/arm/v7,linux/arm64 .
+        run: |
+          docker buildx build \
+            --tag "${{ secrets.DOCKER_HUB_USERNAME }}"/flask-example:latest \
+            --platform linux/amd64,linux/amd64,linux/arm/v7,linux/arm64 .
