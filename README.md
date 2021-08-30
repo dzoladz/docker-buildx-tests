@@ -1,7 +1,7 @@
 Docker Buildx - Tests
 =====================
 
-[![Github Action](https://github.com/jdrouet/docker-on-ci/workflows/build/badge.svg)](https://github.com/dzoladz/docker-buildx-tests/actions)
+![Build Status](https://github.com/dzoladz/docker-buildx-tests/actions/workflows/build-image.yml/badge.svg)
 
 This repository uses [Docker Buildx](https://github.com/docker/buildx) and applies Continuous Integration (CI) - via GitHub Actions and Secrets - to build a multi-architecture Docker image; then, publish it to Docker Hub.
 
